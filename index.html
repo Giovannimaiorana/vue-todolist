@@ -20,7 +20,7 @@
         <main>
             <div class="containerInput">
                 
-                <input type="text" placeholder="Inserici nuovi impegni" v-model="nuovoImpegno">
+                <input type="text" placeholder="Inserici nuovi impegni" v-model="nuovoImpegno"@keyup.enter="aggiungi">
                 <button @click="aggiungi">Inserisci</button>
                 
             </div>
