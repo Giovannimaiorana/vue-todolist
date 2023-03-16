@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+   
+    <div id="app">
+        <header>
+            <div class="container_header">
+                <img class="logo" src="./img/logo.png" alt="">
+
+            </div>
+        </header>
+        <main>
+            <div class="containerInput">
+                
+                <input type="text" placeholder="Inserici nuovi impegni">
+                <button>Inserisci</button>
+                
+            </div>
+            <div class="containerList">
+                <ul class="containerElement">
+                    <li class="elementList">
+                        <span> Fare spesa</span>
+                        <i class="fa-solid fa-x"></i>
+                    </li>
+
+                    <li class="elementList">
+                        <span> Fare spesa</span>
+                        <i class="fa-solid fa-x"></i>
+                    </li>
+
+                    <li class="elementList overline">
+                        <span> Fare spesa</span>
+                        <i class="fa-solid fa-x"></i>
+                    </li>
+                </ul>
+
+            </div>
+        </main>
+
+
+
+        
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+</body>
+</html>
