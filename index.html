@@ -25,19 +25,9 @@
                 
             </div>
             <div class="containerList">
-                <ul class="containerElement">
-                    <li class="elementList">
-                        <span> Fare spesa</span>
-                        <i class="fa-solid fa-x"></i>
-                    </li>
-
-                    <li class="elementList">
-                        <span> Fare spesa</span>
-                        <i class="fa-solid fa-x"></i>
-                    </li>
-
-                    <li class="elementList overline">
-                        <span> Fare spesa</span>
+                <ul class="containerElement" v-if="impegni.length > 0">
+                    <li class="elementList" v-for="impegno in impegni">
+                        <span :class="impegno.done == true?'overline':''">{{impegno.testo}} </span>
                         <i class="fa-solid fa-x"></i>
                     </li>
                 </ul>

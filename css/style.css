@@ -43,7 +43,7 @@ main{
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: space-between;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 .overline{
     text-decoration: line-through;
