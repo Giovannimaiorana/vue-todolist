@@ -28,7 +28,7 @@
                 <ul class="containerElement" v-if="impegni.length > 0">
                     <li class="elementList" v-for="impegno in impegni">
                         <span :class="impegno.done == true?'overline':''">{{impegno.testo}} </span>
-                        <i class="fa-solid fa-x"></i>
+                        <i class="fa-solid fa-x" @click="remove(index)"></i>
                     </li>
                 </ul>
 

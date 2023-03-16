@@ -28,6 +28,9 @@ eseguito(impegno){
   }else{
     impegno.done == false;
   }
+},
+remove(index){
+this.impegni.splice(index, 1);
 }
   }
 }).mount('#app')
