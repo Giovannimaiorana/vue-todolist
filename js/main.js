@@ -2,7 +2,10 @@ const { createApp } = Vue
 
 createApp({
   data() {
+    
     return {
+      nuovoImpegno:"",
+
       impegni:[
         {
           testo:'Fare spesa',
@@ -31,6 +34,11 @@ eseguito(impegno){
 },
 remove(index){
 this.impegni.splice(index, 1);
+},
+aggiungi(){
+  this.impegni.unshift({testo:this.nuovoImpegno,done:false});
+  this.nuovoImpegno="";
 }
+
   }
 }).mount('#app')
